@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Lifestyle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #4CAF50;
+        }
+
+        section p,
+        section ul {
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .tip {
+            background-color: #e7f3e7;
+            border-left: 6px solid #4CAF50;
+            margin: 20px 0;
+            padding: 10px 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Embrace a Healthy Lifestyle</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About a Healthy Lifestyle</h2>
+        <p>A healthy lifestyle involves a balanced diet, regular exercise, and positive mental health practices. It
+            helps in maintaining overall well-being and can prevent various health issues.</p>
+    </section>
+    <section id="benefits">
+        <h2>Benefits of a Healthy Lifestyle</h2>
+        <ul>
+            <li>Improved mental health</li>
+            <li>Better physical fitness</li>
+            <li>Increased energy levels</li>
+            <li>Enhanced immune system</li>
+        </ul>
+    </section>
+    <section id="tips">
+        <h2>Tips for a Healthy Lifestyle</h2>
+        <div class="tip">
+            <h3>Eat a Balanced Diet</h3>
+            <p>Include a variety of fruits, vegetables, lean proteins, and whole grains in your diet.</p>
+        </div>
+        <div class="tip">
+            <h3>Stay Hydrated</h3>
+            <p>Drink plenty of water throughout the day to stay hydrated and maintain bodily functions.</p>
+        </div>
+        <div class="tip">
+            <h3>Exercise Regularly</h3>
+            <p>Aim for at least 30 minutes of moderate exercise most days of the week.</p>
+        </div>
+        <div class="tip">
+            <h3>Get Enough Sleep</h3>
+            <p>Ensure you get 7-8 hours of sleep each night for optimal health.</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>For more information, please email us at <a
+                href="mailto:info@healthylifestyle.com">info@healthylifestyle.com</a>.</p>
+    </footer>
+    <script>
+        // This can be added if you want some interactive features, such as a smooth scroll to sections
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
